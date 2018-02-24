@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Démonstrateur Solaire</string>
+    <string name="menu_first_line">Démonstrateur solaire</string>
+    <string name="menu_second_line">Par Vincent Huguelet</string>
+    <string name="navigation_drawer_open">Ouverture du menu</string>
+    <string name="navigation_drawer_close">Fermeture du menu</string>
+
+    <!-- Menu strings -->
+    <string name="visulalisation_item_title">Visulalisations</string>
+    <string name="application_menu_title">Application</string>
+    <string name="informations_menu_title">Informations</string>
+    <string name="mode_item_title">Configuration</string>
+    <string name="wiki_item_title">Wiki</string>
+    <string name="about_item_title">A propros</string>
+    <string name="export_menu_title">Exportation des données</string>
+    <string name="new_doc_item_title">Nouveau document</string>
+    <string name="bluetooth_namager_menu_title">Gestion Bluetooth</string>
+    <string name="disconnexion_item_title">Déconnexion</string>
+    <string name="console_item_title">Console</string>
+    <string name="calibrage_menu_title">Calibrage</string>
+    <string name="calibrage_item_title">Calibrage</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="pause">Pause Location Updates</string>
+    <string name="resume">Resume Location Updates</string>
+
+</resources>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/manualView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/manualUp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/arrowup"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <Button
+        android:id="@+id/manualLeft"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/manualUp"
+        android:layout_toStartOf="@+id/manualUp"
+        android:background="@drawable/arrowleft"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <Button
+        android:id="@+id/manualRight"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/manualUp"
+        android:layout_toEndOf="@+id/manualDown"
+        android:background="@drawable/arrowright"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <Button
+        android:id="@+id/manualDown"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignStart="@+id/manualUp"
+        android:layout_below="@+id/manualRight"
+        android:background="@drawable/arrowdown"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnth"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Test horizontal"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btntv"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Test vertical"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnsud"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Cap plein Sud"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnroulement"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Roulement"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnPVFast"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="P.V Test"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btninit"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Réinitialisation"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

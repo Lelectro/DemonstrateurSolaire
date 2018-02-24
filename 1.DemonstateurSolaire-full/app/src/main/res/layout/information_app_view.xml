@@ -1,0 +1,185 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/longitudeLabel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/modeLabel"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/timelastinfoLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Dernière mise à jour: "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/modeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/timelastinfoLabel"
+        android:layout_marginTop="12dp"
+        android:text="Mode: "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/azimutLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/longitudeLabel2"
+        android:layout_marginTop="15dp"
+        android:text="Azimut [°]: "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/zenithLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/azimutLabel"
+        android:layout_marginTop="14dp"
+        android:text="Zénith [°]: "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/ppvLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/zenithLabel"
+        android:layout_marginTop="15dp"
+        android:text="Puissance photovoltaïque [W]: "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/pchLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/pch"
+        android:layout_alignBottom="@+id/pch"
+        android:layout_alignParentStart="true"
+        android:text="Puissance de charge [W]: "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/longitudeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/latitudeLabel"
+        android:layout_marginTop="14dp"
+        android:text="longitude [°]: "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/latitudeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/pch"
+        android:layout_marginTop="14dp"
+        android:text="latitude [°]: "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/timelastinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/azimut"
+        android:text="-"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/modeLabel"
+        android:layout_alignBottom="@+id/modeLabel"
+        android:layout_alignStart="@+id/timelastinfo"
+        android:text="-"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/azimut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/azimutLabel"
+        android:layout_alignBottom="@+id/azimutLabel"
+        android:layout_alignStart="@+id/zenith"
+        android:text="-"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/zenith"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/zenithLabel"
+        android:layout_alignBottom="@+id/zenithLabel"
+        android:layout_alignStart="@+id/ppv"
+        android:text="-"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/ppv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ppvLabel"
+        android:layout_alignBottom="@+id/ppvLabel"
+        android:layout_alignStart="@+id/pch"
+        android:text="-"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/pch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/latitude"
+        android:layout_below="@+id/ppv"
+        android:layout_marginTop="16dp"
+        android:text="-"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/longitudeLabel"
+        android:layout_alignBottom="@+id/longitudeLabel"
+        android:layout_alignStart="@+id/latitude"
+        android:text="-"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/latitudeLabel"
+        android:layout_alignBottom="@+id/latitudeLabel"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/ppvLabel"
+        android:text="-"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp" />
+
+</RelativeLayout>

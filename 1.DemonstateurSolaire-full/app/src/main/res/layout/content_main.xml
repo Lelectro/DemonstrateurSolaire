@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingBottom="20dp"
+    android:paddingRight="20dp">
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/deviceLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Nom du device:"
+            android:textSize="20sp"/>
+            <!--android:textColor="@color/colorPrimary"-->
+
+        <TextView
+            android:id="@+id/deviceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/deviceLabel"
+            android:text="Aucun device"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/designDeviceNameStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/deviceName"
+            android:layout_alignParentTop="true"
+            android:text="-"
+            android:textSize="20sp"/>
+        <!--android:textColor="@color/colorPrimary"-->
+
+        <TextView
+            android:id="@+id/statusLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/designDeviceNameStatus"
+            android:layout_alignParentTop="true"
+            android:text="Status:"
+            android:textSize="20sp"/>
+        <!--android:textColor="@color/colorPrimary"-->
+
+        <TextView
+            android:id="@+id/statusName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/statusLabel"
+            android:layout_alignParentTop="true"
+            android:text=" - "
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"/>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/separatorMainFrame"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/material_blue_grey_800"/>
+
+    <FrameLayout
+        android:id="@+id/content_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0"/>
+
+</LinearLayout>

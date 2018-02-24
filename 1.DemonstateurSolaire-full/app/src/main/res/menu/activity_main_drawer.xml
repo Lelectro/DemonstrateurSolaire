@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="@string/application_menu_title">
+            <menu>
+                <item
+                    android:id="@+id/nav_view_data"
+                    android:title="@string/application_menu_title"/>
+
+                <!--<item
+                    android:id="@+id/nav_view_console"
+                    android:title="@string/console_item_title" />
+
+                <item
+                    android:id="@+id/nav_view_data"
+                    android:title="@string/visulalisation_item_title" />
+                <item
+                    android:id="@+id/nav_change_mod"
+                    android:title="@string/mode_item_title" />-->
+            </menu>
+        </item>
+
+        <item android:title="@string/calibrage_menu_title">
+            <menu>
+                <item
+                    android:id="@+id/nav_calibration"
+                    android:title="@string/calibrage_item_title" />
+            </menu>
+        </item>
+
+        <item android:title="@string/export_menu_title">
+            <menu>
+                <item
+                    android:id="@+id/nav_export"
+                    android:title="@string/new_doc_item_title"/>
+            </menu>
+        </item>
+
+        <item android:title="@string/bluetooth_namager_menu_title">
+            <menu>
+                <item
+                    android:id="@+id/nav_disconnect"
+                    android:title="@string/disconnexion_item_title" />
+            </menu>
+        </item>
+
+        <item android:title="@string/informations_menu_title">
+            <menu>
+                <!--<item
+                    android:id="@+id/nav_wiki"
+                    android:title="@string/wiki_item_title" />-->
+                <item
+                    android:id="@+id/nav_about"
+                    android:title="@string/about_item_title" />
+            </menu>
+        </item>
+    </group>
+</menu>

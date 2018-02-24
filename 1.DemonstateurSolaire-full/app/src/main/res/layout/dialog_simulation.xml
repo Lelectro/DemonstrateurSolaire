@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0"
+        android:orientation="vertical"
+        android:paddingLeft="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="Date: "
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Latitude: "
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Longitude: "
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Time Zone (GMT): "
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="25dp">
+
+
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:editable="false"
+            android:focusable="true"
+            android:hint="jj.mm.aaaa" />
+
+        <EditText
+            android:id="@+id/latitudeedt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="latitude"
+            android:inputType="numberSigned|numberDecimal" />
+
+        <EditText
+            android:id="@+id/longitudeedt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="longitiude"
+            android:inputType="numberSigned|numberDecimal" />
+
+        <EditText
+            android:id="@+id/timezoneedt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="timezone GMT"
+            android:inputType="numberSigned" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

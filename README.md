@@ -2,7 +2,7 @@
 
 ## Vincent Huguelet 
 
-## Structure du repo 
+## Structure du repo GIT
 
 1. Code Application Android pour le pilotage du panneau solaire.
 2. Extrait uniquement de la boussole du code de l'app "Démonstrateur Solaire". 
